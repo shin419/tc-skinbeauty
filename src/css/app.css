@@ -1,0 +1,35 @@
+/* app global css */
+.size-screen {
+  width: 1024px;
+  padding: 50px 10px 0 10px;
+}
+.padding-bot {
+  padding-bottom: 50px;
+}
+.bg {
+  background-image: linear-gradient(to right, #bb114d 75%, #bb114d);
+}
+p {
+  margin: 5px 0;
+}
+.style-box:hover {
+  background-image: linear-gradient(to right, #8bf8e0, rgba(217, 250, 239, 0.92));
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+  border-bottom: 2px solid rgba(238, 37, 37, 0.2);
+}
+.border-img {
+  border: 1px solid #8bf8e0;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+}
+.border-img:hover {
+  border: 1px solid #8bf8e0;
+  background-image: linear-gradient(to right, #8bf8e0, rgba(217, 250, 239, 0.92));
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+}
+.bg-section {
+  background-image: linear-gradient(to right, #F9C2C8 70%, #fff2e5);
+}
