@@ -7,7 +7,7 @@
   padding-bottom: 50px;
 }
 .bg {
-  background-image: linear-gradient(to right, #bb114d 75%, #bb114d);
+  background-image: radial-gradient(#fd4c8c, #9f063c);
 }
 p {
   margin: 5px 0;
@@ -16,6 +16,9 @@ p {
   background-image: linear-gradient(to right, #8bf8e0, rgba(217, 250, 239, 0.92));
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
   border-bottom: 2px solid rgba(238, 37, 37, 0.2);
+}
+.colortext{
+  color: #9f063c;
 }
 .border-img {
   border: 1px solid #8bf8e0;
@@ -30,6 +33,30 @@ p {
   padding: 10px;
   width: 50px;
 }
+.btn:hover {
+  background-image: linear-gradient(to right, #8bf8e0, rgba(217, 250, 239, 0.92)) !important;
+  color: #bb114d !important;
+}
 .bg-section {
-  background-image: linear-gradient(to right, #F9C2C8 70%, #fff2e5);
+  background-image: linear-gradient(to right, #ffd2d7 70%, #fff5ed);
+}
+.btn-send {
+  width: 100px;
+  color: #bb114d !important;
+  background-image: linear-gradient(to right, #8bf8e0, rgba(217, 250, 239, 0.92)) !important;
+}
+.bg-section-dangky {
+  background-color: #9f063c;
+  color: white;
+}
+.dialog-thanhtoan {
+  width: 80vw;
+}
+@media only screen and (max-width: 800px) {
+  .dialog-thanhtoan {
+    width: 100vw;
+  }
+}
+.hide-icon-type-number input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
