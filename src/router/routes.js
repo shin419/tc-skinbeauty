@@ -11,6 +11,14 @@ const routes = [
     ],
   },
   {
+    path: "/dangkys",
+    component: () => import("pages/Admin/DangKy.vue"),
+  },
+  {
+    path: "/hoadons",
+    component: () => import("pages/Admin/HoaDon.vue"),
+  },
+  {
     path: "/:catchAll(.*)*",
     component: () => import("pages/Error404.vue"),
   },

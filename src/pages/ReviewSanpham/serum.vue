@@ -430,7 +430,7 @@ export default {
         district: '',
         ward: '',
         address: '',
-        status: 'Chưa thanh toán'
+        status: ''
       },
       dialog: false,
       sdt: '',
@@ -483,6 +483,7 @@ export default {
       FunCheck(address === '', 'Vui lòng nhập số nhà , tên đường ...')
       FunCheck(sanpham.amount <= 0, 'Số lượng sản phẩm chưa chính xác')
       if (!isError) {
+        infoClone.time = new Date().getTime()
         this.$push('hoadons/', infoClone)
           .then(() => {
             this.$util.ShowNotify('Đặt hàng thành công')
@@ -494,7 +495,8 @@ export default {
     },
     dangKy () {
       if (this.sdt && this.sdt !== '') {
-        this.$push('dangkys/', this.sdt)
+        let data = { phone: this.sdt, time: new Date().getTime() }
+        this.$post('dangkys/' + this.sdt, data)
           .then(() => {
             this.$util.ShowNotify('Bạn đã đăng ký tư vấn thành công')
           })
